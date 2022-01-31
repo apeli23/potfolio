@@ -2,5 +2,5 @@ import React from 'react';
 import "./testimonials.scss"
 
 export default function Testimonials() {
-  return <div></div>;
+  return <div className="testimonials" id="testimonials"></div>;
 }
