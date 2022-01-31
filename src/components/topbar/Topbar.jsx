@@ -3,19 +3,19 @@ import { Person, Mail } from '@material-ui/icons';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
-    <div className="topbar">
+    <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            genius.
+            Apeli
           </a>
           <div className="itemContainer">
             <Person className="icon" />
-            <span>+44 924 12 74</span>
+            <span>+254706757828</span>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span>safak@genius.com</span>
+            <span>apelibrian@gmail.com</span>
           </div>
         </div>
         <div className="right">
