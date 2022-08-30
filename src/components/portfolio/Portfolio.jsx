@@ -4,9 +4,9 @@ import "./portfolio.scss";
 import {
   featuredPortfolio,
   webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  // mobilePortfolio,
+  articlesPortfolio,
+  // contentPortfolio,
 } from "../../data";
 
 export default function Portfolio() {
@@ -22,17 +22,10 @@ export default function Portfolio() {
       title: "Web App",
     },
     {
-      id: "mobile",
-      title: "Mobile App",
+      id: "articles",
+      title: "Articles",
     },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
+  
   ];
 
   useEffect(() => {
@@ -43,15 +36,13 @@ export default function Portfolio() {
       case "web":
         setData(webPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
+      // case "mobile":
+      //   setData(mobilePortfolio);
+      //   break;
+      case "articles":
+        setData(articlesPortfolio);
         break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
-        break;
+    
       default:
         setData(featuredPortfolio);
     }
