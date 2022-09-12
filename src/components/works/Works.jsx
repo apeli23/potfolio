@@ -7,23 +7,26 @@ export default function Works() {
     {
       id: '1',
       icon: './assets/mobile.png',
-      title: 'Web Design',
-      desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-      img: 'https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930',
+      title: 'Web developement',
+      desc: 'Developing websites for business operations ',
+      img: 'https://res.cloudinary.com/dogjmmett/image/upload/v1661837361/ui_ao5593.png',
+      link: 'https://nextjsecommerceproject.vercel.app/'
     },
     {
       id: '2',
-      icon: './assets/globe.png',
-      title: 'Mobile Application',
-      desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-      img: 'https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg',
+      icon: './assets/writing.png',
+      title: 'Technical Writing',
+      desc: 'Writing technical articles in software developement topics',
+      img: 'https://res.cloudinary.com/dogjmmett/image/upload/v1662973765/techwrite_h3zi8l.jpg',
+      link: ''
     },
     {
       id: '3',
-      icon: './assets/writing.png',
-      title: 'Branding',
-      desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-      img: 'https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg',
+      icon: 'https://res.cloudinary.com/dogjmmett/image/upload/v1662984894/icon_h7brju.webp',
+      title: 'Gaming services',
+      desc: 'Founder Game Knights Arcade, Nairobi Kenya, offering ps4 and ps5 gaming experience.',
+      img: 'https://res.cloudinary.com/dogjmmett/image/upload/v1662969402/Screenshot_2022-09-12_at_10.56.28_k3l2eg.png',
+      link: 'https://emmanugalleries.pixieset.com/gameknightsfootagesday1/'
     },
   ];
 
@@ -49,12 +52,14 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                   
                 </div>
               </div>
               <div className="right">
                 <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                height="450"
+                width='450'
+                  src={d.img}
                   alt=""
                 />
               </div>
