@@ -10,7 +10,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed:60,
-      strings: ["Web Developer", "Web Designer", "Content Creator"],
+      strings: ["Web Developer", "Web Designer", "Software Contractor"],
     });
   }, []);
 
@@ -18,7 +18,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/man.png" alt="" />
+          <img src="https://res.cloudinary.com/dogjmmett/image/upload/v1662910095/Screenshot_2022-09-11_at_18.27.15-removebg-preview_puswu6.png" alt="" />
         </div>
       </div>
       <div className="right">
