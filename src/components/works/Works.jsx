@@ -24,7 +24,7 @@ export default function Works() {
       id: '3',
       icon: 'https://res.cloudinary.com/dogjmmett/image/upload/v1662984894/icon_h7brju.webp',
       title: 'Gaming services',
-      desc: 'Founder Game Knights Arcade, Nairobi Kenya, offering ps4 and ps5 gaming experience.',
+      desc: 'Co-founder Game Knights Arcade for gaming services at Nairobi, Kenya.',
       img: 'https://res.cloudinary.com/dogjmmett/image/upload/v1662969402/Screenshot_2022-09-12_at_10.56.28_k3l2eg.png',
       link: 'https://emmanugalleries.pixieset.com/gameknightsfootagesday1/'
     },
@@ -43,6 +43,7 @@ export default function Works() {
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
         {data.map((d) => (
+          <a href={d.link} className="link">
           <div className="container">
             <div className="item">
               <div className="left">
@@ -65,6 +66,7 @@ export default function Works() {
               </div>
             </div>
           </div>
+          </a>
         ))}
       </div>
       <img
